@@ -1,0 +1,77 @@
+.blurdiv{
+  filter: blur(1.5px);    
+}
+.noblurdiv{
+  filter: blur(0px);    
+}
+#absolute-div {
+  position: absolute;
+  padding: 2px;
+  top: 107px;
+  left: 37px;
+}
+#lead-result{
+  position: absolute;
+  top: 35%;
+  left: 18%;
+  filter: blur(0px);
+  z-index: 20;
+}
+.plus-sign{
+  outline: none;
+}
+.plus-sign:hover{
+  transform: rotate(180deg);
+  transition: 1s;
+  margin-top: -4px;
+}
+.preview-div {
+  position: relative;
+  background: #fff;
+  border-radius: 20px;
+}
+.edit-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+body {
+  background-color: rgba(39, 18, 227, 0.04);
+}
+.lead-entry-div {
+  background: #fff;
+}
+.curve-box {
+  border-radius: 20px;
+}
+.alert-success{
+  animation-name: zero-to-big;
+  animation-duration: 0.5s;
+}
+.alert-danger{
+  animation-name: zero-to-big;
+  animation-duration: 0.5s;
+}
+.alert-warning{
+  animation-name: zero-to-big;
+  animation-duration: 0.5s;
+}
+
+@keyframes zero-to-big{
+  from{transform: scale(0);}
+  to{transform: scale(1);}
+}
+.result-status-absolute{
+  position: absolute;
+  top: 25%;
+  left: 23%;
+  z-index: 16;
+}
+.view-div{
+  background: #fff;
+}
+.view-table > tbody > tr > td :not(:first-child),
+.view-table > tbody > tr > td:not(:first-child) {
+  padding-left: 70px;
+}
+

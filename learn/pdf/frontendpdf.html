@@ -1,0 +1,34 @@
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF</title>
+    <style>
+        h1#heading{
+            color: red;
+            text-align: center;
+            background-color: lightseagreen;
+            border: 3px;
+            width: 200px;
+            margin: 0 auto;
+            border: 2px solid red;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+</head>
+<body>
+    <h1 id="heading">
+        This is heading
+    </h1>
+
+    <script>
+        let h = document.getElementById('heading');
+        var doc = new jsPDF()
+        doc.fromHTML(h,15,15);
+        doc.save('output.pdf');
+    </script>
+
+</body>
+</html>

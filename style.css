@@ -1,0 +1,15 @@
+.modal-body .heading-div{
+    display: flex;
+}
+.mini-heading{
+    position: absolute;
+    top: 100;
+}
+.mini-heading h1{
+    margin-top: 300px;
+}
+
+.logo-img{
+    height: 80px;
+    margin-left: 400px;
+}
